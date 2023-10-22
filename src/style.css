@@ -5,4 +5,67 @@ body {
 }
 
 h1 {
+  color: black;
+  font-size: 60px;
+}
+.button {
+  margin-top: 50px;
+}
+
+.fixed-bottom {
+  color: black;
+  font-size: 30px;
+}
+.Card {
+  display: inline-block;
+  padding-top: 80px;
+  width: 350px;
+  height: 450px;
+  background: #ededef;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 70px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    font-size: 100px;
+    bottom: -30px;
+    right: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  &::after {
+    position: absolute;
+    font-size: 100px;
+    top: -30px;
+    left: 0px;
+
+    margin-left: 10px;
+  }
+  &.spade::before,
+  &.spade::after {
+    content: "\2660";
+  }
+  &.club::before,
+  &.club::after {
+    content: "\2663";
+  }
+  &.heart::before,
+  &.heart::after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond::before,
+  &.diamond::after {
+    content: "\2666";
+    color: red;
+  }
+  .numb {
+    color: black;
+    font-size: 100px;
+    margin-top: 55px;
+  }
 }
