@@ -16,7 +16,7 @@ window.onload = () => {
     document.querySelector(".numb").innerHTML = generateRandomNumber();
   });
 };
-// Generador de Numberos
+// Generador de Numeros
 let generateRandomNumber = () => {
   let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
   let indexNumbers = Math.floor(Math.random() * numbers.length);
